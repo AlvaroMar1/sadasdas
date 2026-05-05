@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+            <!-- TIPO ISBN-->
+      <xs:simpleType name="tipoISBN">
+        <xs:restriction base="xs:integer">
+          <xs:pattern value="[0-9]{5}"/>
+        </xs:restriction>
+      </xs:simpleType>
+
+    <xs:element name="libro">
+      <xs:complexType>
+
+        <xs:sequence>
+
+          <xs:element name="titulo" type="xs:string"/>
+          <xs:element name="autor" type="xs:string"/>
+          <xs:element name="isbn" type="tipoISBN"/> <!-- TIPO ISBN CREADO ARRIBA -->
+          
+
+          <xs:element name="precio">
+            <xs:simpleType>
+              <xs:restriction base="xs:double">
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="500"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+        </xs:sequence>
+
+        <xs:attribute name="categoria" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="Informatica"/>
+              <xs:enumeration value="Novela"/>
+              <xs:enumeration value="Historia"/>
+            </xs:restriction>
+          </xs:simpleType>
+
+
+        </xs:attribute>
+
+      </xs:complexType>
+   </xs:element>
+ </xs:schema>

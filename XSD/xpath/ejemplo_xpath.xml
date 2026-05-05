@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <price>30.00</price>
+  </book>
+  <book category="web">
+    <title lang="es">Aprender XML</title>
+    <price>39.95</price>
+  </book>
+</bookstore>
+
+

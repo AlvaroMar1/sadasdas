@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="instituto.xsd">
+
+    <modulos>
+        <modulo identificador="LMSGI">
+            <nombre>Lenguaje de Marcas</nombre>
+            <curso>1º</curso>
+            <horasSemanales>5</horasSemanales>
+        </modulo>
+    </modulos>
+
+    <aulas>
+        <aula identificador="A101">
+            <tipo>Teoria</tipo>
+            <capacidad>30</capacidad>
+            <fecha_revision>2025-08-15</fecha_revision>
+        </aula>
+    </aulas>
+</instituto>

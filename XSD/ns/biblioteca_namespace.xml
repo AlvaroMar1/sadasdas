@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<b:libro xmlns:b="http://www.ejemplo.com/biblioteca"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.ejemplo.com/biblioteca biblioteca_namespace.xsd">
+    <b:titulo>XML básico</b:titulo>
+    <b:autor>Ana López</b:autor>
+</b:libro>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instituto id="IESLV001" nombre="IES La Vereda">
+  <departamentos>
+    <departamento id="DINF">
+      <nombre>Informática</nombre>
+      <jefe_departamento>Paco Fernández</jefe_departamento>
+      <presupuesto>2500</presupuesto>
+    </departamento>
+    <departamento id="DADM">
+      <nombre>Administración</nombre>
+      <jefe_departamento>Laura Gómez</jefe_departamento>
+      <presupuesto>1800</presupuesto>
+    </departamento>
+    <departamento id="DFOL">
+      <nombre>FOL</nombre>
+      <jefe_departamento>María Ruiz</jefe_departamento>
+      <presupuesto>900</presupuesto>
+    </departamento>
+  </departamentos>
+
+  <ciclos>
+    <ciclo id="DAW" grado="Superior">
+      <nombre>Desarrollo de Aplicaciones Web</nombre>
+      <profesores>
+        <profesor id="P01">
+          <nombre>Ana Beltrán</nombre>
+        </profesor>
+        <profesor id="P02">
+          <nombre>Javier Soto</nombre>
+        </profesor>
+      </profesores>
+      <modulos>
+        <modulo id="LMSGI" curso="1">
+          <nombre>Lenguajes de Marcas y Sistemas de Gestión de Información</nombre>
+          <horas>96</horas>
+        </modulo>
+        <modulo id="BBDD" curso="1">
+          <nombre>Bases de Datos</nombre>
+          <horas>192</horas>
+        </modulo>
+        <modulo id="PROG" curso="1">
+          <nombre>Programación</nombre>
+          <horas>256</horas>
+        </modulo>
+        <modulo id="DWEC" curso="2">
+          <nombre>Desarrollo Web en Entorno Cliente</nombre>
+          <horas>120</horas>
+        </modulo>
+        <modulo id="DWES" curso="2">
+          <nombre>Desarrollo Web en Entorno Servidor</nombre>
+          <horas>140</horas>
+        </modulo>
+      </modulos>
+    </ciclo>
+
+    <ciclo id="SMR" grado="Medio">
+      <nombre>Sistemas Microinformáticos y Redes</nombre>
+      <profesores>
+        <profesor id="P03">
+          <nombre>Diego Martínez</nombre>
+        </profesor>
+      </profesores>
+      <modulos>
+        <modulo id="MME" curso="1">
+          <nombre>Montaje y Mantenimiento de Equipos</nombre>
+          <horas>224</horas>
+        </modulo>
+        <modulo id="SOM" curso="1">
+          <nombre>Sistemas Operativos Monopuesto</nombre>
+          <horas>160</horas>
+        </modulo>
+      </modulos>
+    </ciclo>
+  </ciclos>
+
+  <alumnos>
+    <alumno NIA="1001" activo="yes">
+      <nombre>Alba</nombre>
+      <apellidos>García López</apellidos>
+      <fecha_nacimiento>2004-03-12</fecha_nacimiento>
+      <direccion>
+        <poblacion>La Pobla de Vallbona</poblacion>
+      </direccion>
+      <beca tipo="Transporte">
+        <cuantia>300</cuantia>
+      </beca>
+      <matriculas>
+        <modulo_ref id="LMSGI"/>
+        <modulo_ref id="BBDD"/>
+        <modulo_ref id="PROG"/>
+      </matriculas>/instituto/ciclos/ciclo/modulos/modulo[@curso='1']/nombre
+    </alumno>
+
+    <alumno NIA="1002" activo="yes">
+      <nombre>Joan</nombre>
+      <apellidos>Pérez Martínez</apellidos>
+      <fecha_nacimiento>2002-11-08</fecha_nacimiento>
+      <direccion>
+        <poblacion>Llíria</poblacion>
+      </direccion>
+      <beca tipo="Desplazamiento">
+        <cuantia>450</cuantia>
+      </beca>
+      <matriculas>
+        <modulo_ref id="LMSGI"/>
+        <modulo_ref id="DWEC"/>
+      </matriculas>
+      <calificaciones>
+        <calificacion modulo="LMSGI">4</calificacion>
+        <calificacion modulo="DWEC">6</calificacion>
+      </calificaciones>
+    </alumno>
+
+    <alumno NIA="1003" activo="no">
+      <nombre>Andrea</nombre>
+      <apellidos>Torres García</apellidos>
+      <fecha_nacimiento>2001-05-19</fecha_nacimiento>
+      <direccion>
+        <poblacion>Valencia</poblacion>
+      </direccion>
+      <matriculas>
+        <modulo_ref id="MME"/>
+      </matriculas>
+      <calificaciones>
+        <calificacion modulo="MME">9</calificacion>
+      </calificaciones>
+    </alumno>
+
+    <alumno NIA="1004" activo="yes">
+      <nombre>Carlos</nombre>
+      <apellidos>Navarro Ruiz</apellidos>
+      <fecha_nacimiento>2005-01-25</fecha_nacimiento>
+      <direccion>
+        <poblacion>La Pobla de Vallbona</poblacion>
+      </direccion>
+      <matriculas>
+        <modulo_ref id="PROG"/>
+        <modulo_ref id="DWES"/>
+      </matriculas>
+      <calificaciones>
+        <calificacion modulo="LMSGI">5</calificacion>
+        <calificacion modulo="PROG">6</calificacion>
+      </calificaciones>
+    </alumno>
+  </alumnos>
+
+  <equipamiento>
+    <item id="EQ01" tipo="switch">
+      <marca>Cisco</marca>
+    </item>
+    <item id="EQ02" tipo="router">
+      <marca>MikroTik</marca>
+    </item>
+    <item id="EQ03" tipo="switch">
+      <marca>TP-Link</marca>
+    </item>
+  </equipamiento>
+</instituto>

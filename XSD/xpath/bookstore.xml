@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book category="cooking" available="yes">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children" available="yes">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+  <book category="web" available="no">
+    <title lang="es">Aprender XML</title>
+    <author>Ana López</author>
+    <year>2021</year>
+    <price>39.95</price>
+  </book>
+
+  <book category="web" available="yes">
+    <title lang="en">Learning XPath</title>
+    <author>Mark Reed</author>
+    <year>2018</year>
+    <price>42.50</price>
+  </book>
+
+  <book category="fiction" available="yes">
+    <title lang="es">La sombra del viento</title>
+    <author>Carlos Ruiz Zafón</author>
+    <year>2001</year>
+    <price>24.95</price>
+  </book>
+
+  <magazine monthly="yes">
+    <title lang="es">Muy Interesante</title>
+    <issue>245</issue>
+    <price>6.50</price>
+  </magazine>
+
+  <magazine monthly="no">
+    <title lang="en">National Geographic</title>
+    <issue>128</issue>
+    <price>8.75</price>
+  </magazine>
+</bookstore>
